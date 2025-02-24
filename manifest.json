@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "PhishShield",
+    "description": "A phishing detection Chrome extension with whitelist and reporting features.",
+    "version": "1.0",
+    "permissions": [
+      "tabs",
+      "storage",
+      "webNavigation",
+      "notifications"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/phishshield16.png",
+        "48": "icons/phishshield48.png",
+        "128": "icons/phishshield128.png"
+      }
+    },
+    "icons": {
+      "16": "icons/phishshield16.png",
+      "48": "icons/phishshield48.png",
+      "128": "icons/phishshield128.png"
+    }
+  }
+  
