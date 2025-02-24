@@ -53,15 +53,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-GeoPulse is an AI-powered system designed to analyze the relationship between geopolitical events and crude oil pricing. By integrating financial data, news sentiment analysis, and knowledge graph-based insights, the platform helps users understand how global events influence market trends. 
+PhishShield is a lightweight, AI-powered browser extension designed to detect and prevent phishing attacks in real time. By analyzing URLs using machine learning models, it helps users identify potentially malicious links before they interact with them.
 
-It use natural language processing and retrieval-augmented generation (RAG) to process news articles, assess sentiment, and provide data-driven insights through an interactive interface. 
-
-GeoPulse is built for policymakers, analysts, and researchers seeking a clearer understanding of market volatility driven by geopolitical factors.
+PhishShield leverages a trained classification model to assess URL attributes and predict the likelihood of a phishing attempt. The extension seamlessly integrates with the browser to provide instant warnings, enhancing cybersecurity for everyday users.
 
 ### Built With
 
-[![tools](https://skillicons.dev/icons?i=py,nextjs,tailwind,mongodb,neo4j)](https://skillicons.dev)
+[![tools](https://skillicons.dev/icons?i=py,js,sklearn,html,css,github,gcp)](https://skillicons.dev)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,7 +68,6 @@ GeoPulse is built for policymakers, analysts, and researchers seeking a clearer 
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
-*Note*: Windows steps assume that you're using PowerShell from within the [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-gb&gl=gb&rtc=1) app.
 
 ### Cloning the repository
 
@@ -78,9 +75,21 @@ To get a local copy up and running, follow these steps:
 > git clone https://github.com/Vindhyaa-Saravanan/PhishShield.git
 ```
 
-### Setting up the repository to run the application
+### Setting up the extension
 
-TBD
+1. Open Google Chrome and navigate to ```chrome://extensions/```
+
+2. Enable Developer Mode (toggle in the top right corner)
+
+3. Click Load Unpacked and select the PhishShield project directory
+
+4. The extension should now be available in your browser
+
+### Running the machine learning model
+
+PhishShield uses a pre-trained model for phishing detection. The model is lightweight and optimized for browser-based execution.
+
+Ensure the saved model file (phishshield_model.onnx) is present in the extension directory. The extension will automatically load and use the model when analyzing URLs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +98,7 @@ TBD
 <!-- ISSUES -->
 ## Issues
 
-See the [open issues](https://github.com/Vindhyaa-Saravanan/PhishShield/issues) for a full list of known issues,  priorities and assignees.
+See the [open issues](https://github.com/Vindhyaa-Saravanan/PhishShield/issues) for a full list of known issues, priorities and assignees.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,20 +107,12 @@ See the [open issues](https://github.com/Vindhyaa-Saravanan/PhishShield/issues) 
 <!-- CREATED BY -->
 ## Created by
 
-### Group 8
-
-* Dania Mohamed - [@daniamohamed](https://github.com/daniamohamed) - sc20dm@leeds.ac.uk
-* Ruhma Fatima - [@sc20rf](https://github.com/sc20rf) - sc20rf@leeds.ac.uk
-* Yashvi Shah - [@yashvishah16](https://github.com/yashvishah16) - sc20yjs@leeds.ac.uk
 * Vindhyaa Saravanan - [@Vindhyaa-Saravanan](https://github.com/Vindhyaa-Saravanan) - sc21vs@leeds.ac.uk
-* Deep Waghulde - [@deepw02](https://github.com/deepw02) - sc20dpw@leeds.ac.uk
-* Swayam Arora - [@swayamaror](https://github.com/swayamaror) - sc21sa@leeds.ac.uk
 
 
 ### Project Links:
 
 * [Project Repository](https://github.com/Vindhyaa-Saravanan/PhishShield)
-* [Project Wiki](https://github.com/Vindhyaa-Saravanan/PhishShield/wiki)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
